@@ -1,3 +1,4 @@
+
 FROM python:3.11.3-slim-buster
 
 WORKDIR /app
@@ -12,5 +13,4 @@ EXPOSE 5000
 
 ENTRYPOINT ["python"]
 
-CMD ["python3", "app.py"]
-
+CMD ["app.py"]
