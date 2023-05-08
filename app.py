@@ -36,6 +36,13 @@ class Perceptron():
 # Create a flask
 app = Flask(__name__)
 
+# Define the home endpoint
+@app.route('/')
+def home():
+    return 'Welcome to the Iris prediction API!'
+	
+	
+
 # Create an API end point
 @app.route('/api/v1.0/predict', methods=['GET'])
 def get_prediction():
